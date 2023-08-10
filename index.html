@@ -1,0 +1,593 @@
+
+<!---Log-in-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="webpage icon" href="./Screenshot (10).png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Portfolio</title>
+  </head>
+
+  <body oncontextmenu="return false">
+    <header>
+      <div class="logo">
+        <img src="./Screenshot 2023-07-25 132505.png" width="20%" />
+      </div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="mainicon">
+        <div class="menu">
+          <i class="bi bi-list"></i>
+        </div>
+      </label>
+      <nav>
+        <a class='active' href='/'>Home</a>
+        <a href='./about.html'>About</a>
+        <a href='./projects'>Skills</a>
+        <a href='./contacts'>Contact</a>
+      </nav>
+    </header>
+ 
+    <section>
+      
+      <div class="main">
+        <div class="detail">
+          
+          <h1>
+            <span style="color:whitesmoke;">Hi, It's Me</span> <br />
+            <span style="color: #00e8f8">
+              <div class="text-container" id="typingText"></div>
+              <script>
+                
+                // Function to simulate typing effect
+                function typeTextEffect() {
+                  const textElement = document.getElementById("typingText");
+                  const text = "I'M SATHWIK REDDY ";
+                  const speed = 100; // Adjust typing speed (in milliseconds) - smaller value is faster
+    
+                  let i = 0;
+    
+                  function typeNextChar() {
+                    if (i < text.length) {
+                      textElement.textContent += text.charAt(i);
+                      i++;
+                      setTimeout(typeNextChar, speed);
+                    }
+                  }
+    
+                  typeNextChar();
+                }
+
+    
+                // Call the function to start the typing effect when the page loads
+                window.onload = function () {
+                  typeTextEffect();
+                };
+               
+              </script></span>
+          </h1>
+          <p >
+            I am adept at crafting visually appealing and<br />
+            responsive user interfaces.
+          </p>
+          <div class="social">
+            <a href="https://github.com/sathwik156876/"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a href="https://www.instagram.com/its_sai_26/"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/sathwik-reddy-220745213/"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="images">
+          <img src="./pic.jpg" alt="" width="60%" />
+  
+        </div>
+      </div>
+      <br/>
+</section>
+
+    
+      <section class="academics-section" style=" padding: 40px 0;">
+     
+        <h3
+          class="impressive-heading"
+          style="
+            font-size: 2.5rem;
+            color: transparent;
+            background: linear-gradient(-45deg, blue, aqua, orange);
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: rotate 5s linear infinite,
+              colorChange 10s ease-in-out alternate infinite;
+              
+          "
+        >
+          <center>ACADEMICS</center>
+        </h3><br/>
+        <br/>
+        <div class="education-item" style=" margin-bottom: 20px;
+        padding: 15px;
+        border: 2px solid white;
+        border-radius: 4px;
+        background-color: #1f252e;">
+          <h3 style="color:aqua;">Bachelor of technology in Computer Science</h3>
+          <p style="color:white;">Vaagdevi College Of Engineering,Warangal,India</p>
+          <p style="color:white;">Graduated: July 2023</p>
+        
+        </div>
+        <div class="education-item" style=" margin-bottom: 20px;
+        padding: 15px;
+        border: 2px solid white;
+        border-radius: 4px;
+        background-color: #1f252e;">
+          <h3 style="color:aqua;">Intermediate or Class 12</h3>
+          <p style="color:white;">SR Junior College,Warangal,India</p>
+          <p style="color:white;"> May:2019</p>
+          
+        </div>
+        <div class="education-item" style=" margin-bottom: 20px;
+        padding: 15px;
+        border: 2px solid white;
+        border-radius: 4px;
+        background-color: #1f252e;">
+          <h3 style="color:aqua;">SSC or Class 10</h3>
+          <p style="color:white;">Krishnaveni Talent School,Parkal,India</p>
+          <p style="color:white;">May: 2017</p>
+          
+        </div>
+      
+        <!-- Add more education items if needed -->
+      </section>
+      <h3
+          class="impressive-heading"
+          style="
+            font-size: 2.5rem;
+            color: transparent;
+            background: linear-gradient(-45deg, pink, aqua, orange);
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: rotate 5s linear infinite,
+              colorChange 10s ease-in-out alternate infinite;
+              
+          "
+        >
+          <center>MY SKILLS</center>
+        </h3><br/><br/>
+    
+      
+      <div
+        class="skills-container"
+        style="
+          width: 400px;
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #1f252e;
+          border: 4px solid white;
+          border-radius: 5px;
+          font-family: Arial, sans-serif;
+        "
+      >
+        <div class="skill" style="margin-bottom: 5px">
+          <span
+            class="skill-label"
+            style="font-weight: bold; color: white; font-size: 14px"
+            >HTML</span
+          >
+          <div
+            class="skill-bar"
+            style="
+              width: 100%;
+              height: 10px;
+              background-color: grey;
+              border-radius: 7px;
+            "
+          >
+            <div
+              class="skill-level"
+              style="
+                height: 100%;
+                border-radius: 10px;
+                background-color: aqua;
+                width: 90%;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="skill" style="margin-bottom: 5px">
+          <span
+            class="skill-label"
+            style="font-weight: bold; color: white; font-size: 14px"
+            >CSS</span
+          >
+          <div
+            class="skill-bar"
+            style="
+              width: 100%;
+              height: 10px;
+              background-color: grey;
+              border-radius: 7px;
+            "
+          >
+            <div
+              class="skill-level"
+              style="
+                height: 100%;
+                border-radius: 5px;
+                background-color: aqua;
+                width: 80%;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="skill" style="margin-bottom: 5px">
+          <span
+            class="skill-label"
+            style="font-weight: bold; color: white; font-size: 14px"
+            >JAVASCRIPT</span
+          >
+          <div
+            class="skill-bar"
+            style="
+              width: 100%;
+              height: 10px;
+              background-color: grey;
+              border-radius: 7px;
+            "
+          >
+            <div
+              class="skill-level"
+              style="
+                height: 100%;
+                border-radius: 5px;
+                background-color: aqua;
+                width: 75%;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="skill" style="margin-bottom: 5px">
+          <span
+            class="skill-label"
+            style="font-weight: bold; color: white; font-size: 14px"
+            >MONGODB</span
+          >
+          <div
+            class="skill-bar"
+            style="
+              width: 100%;
+              height: 10px;
+              background-color: grey;
+              border-radius: 7px;
+            "
+          >
+            <div
+              class="skill-level"
+              style="
+                height: 100%;
+                border-radius: 5px;
+                background-color: aqua;
+                width: 78%;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="skill" style="margin-bottom: 5px">
+          <span
+            class="skill-label"
+            style="font-weight: bold; color: white; font-size: 14px"
+            >PYTHON</span
+          >
+          <div
+            class="skill-bar"
+            style="
+              width: 100%;
+              height: 10px;
+              background-color: grey;
+              border-radius: 7px;
+            "
+          >
+            <div
+              class="skill-level"
+              style="
+                height: 100%;
+                border-radius: 5px;
+                background-color: aqua;
+                width: 80%;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="skill" style="margin-bottom: 5px">
+          <span
+            class="skill-label"
+            style="font-weight: bold; color: white; font-size: 14px"
+            >AWS</span
+          >
+          <div
+            class="skill-bar"
+            style="
+              width: 100%;
+              height: 10px;
+              background-color: grey;
+              border-radius: 7px;
+            "
+          >
+            <div
+              class="skill-level"
+              style="
+                height: 100%;
+                border-radius: 5px;
+                background-color: aqua;
+                width: 84%;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="skill" style="margin-bottom: 5px">
+          <span
+            class="skill-label"
+            style="font-weight: bold; color: white; font-size: 14px"
+            >REACTJS</span
+          >
+          <div
+            class="skill-bar"
+            style="
+              width: 100%;
+              height: 10px;
+              background-color: grey;
+              border-radius: 7px;
+            "
+          >
+            <div
+              class="skill-level"
+              style="
+                height: 100%;
+                border-radius: 5px;
+                background-color: aqua;
+                width: 78%;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="skill" style="margin-bottom: 5px">
+          <span
+            class="skill-label"
+            style="font-weight: bold; color: white; font-size: 14px"
+            >SQL</span
+          >
+          <div
+            class="skill-bar"
+            style="
+              width: 100%;
+              height: 10px;
+              background-color: grey;
+              border-radius: 7px;
+            "
+          >
+            <div
+              class="skill-level"
+              style="
+                height: 100%;
+                border-radius: 5px;
+                background-color: aqua;
+                width: 82%;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="skill" style="margin-bottom: 5px">
+          <span
+            class="skill-label"
+            style="font-weight: bold; color: white; font-size: 14px"
+            >NODE JS</span
+          >
+          <div
+            class="skill-bar"
+            style="
+              width: 100%;
+              height: 10px;
+              background-color: grey;
+              border-radius: 7px;
+            "
+          >
+            <div
+              class="skill-level"
+              style="
+                height: 100%;
+                border-radius: 5px;
+                background-color: aqua;
+                width: 80%;
+              "
+            ></div>
+          </div>
+        </div>
+        <!-- Add more skills here -->
+      </div>
+
+    
+   
+    
+    
+      <section>
+        
+
+        <center>
+          <h3
+          class="impressive-heading"
+          style="
+            font-size: 2.5rem;
+            color: transparent;
+            background: linear-gradient(-45deg, pink, aqua, orange);
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: rotate 5s linear infinite,
+              colorChange 10s ease-in-out alternate infinite;
+              
+          "
+        >
+          <center>GLOBAL CERTIFICATION</center>
+        </h3><br/>
+          <a  class='image-item'href="https://www.credly.com/badges/f8b14aa5-bd97-4c95-b836-4753f4c57ea7/public_url">
+          <div class="certification-card">
+            <img src="./AWS BATCH.png" alt="Certification 1" width="45%">
+            <p style="color:white;">AWS CLOUD PRACTITIONER(CLF-01)</p>
+            <p style="color:white;">Date: JULY 2022</p>
+           
+        </div>
+        </center></a>
+      </section>
+      
+        <section>
+          <center>
+            <h3
+            class="impressive-heading"
+            style="
+              font-size: 2.5rem;
+              color: transparent;
+              background: linear-gradient(-45deg, blue, aqua, orange);
+              -webkit-background-clip: text;
+              background-clip: text;
+              animation: rotate 5s linear infinite,
+                colorChange 10s ease-in-out alternate infinite;
+                
+            "
+          >
+            <center>PROJECTS</center>
+          </h3><br/><br/>
+          <a class='image-item' href='https://info-view-react12.onrender.com/'>
+            <img src="./FIRSTMERN.png" alt="Image 1" height="300px" width="320px" style="border: 4px solid grey;">
+            <p style="color:white;">Responsive Mern page</p>
+        </a><br/><br/>
+          <a class='image-item' href='/projects'>
+            <img src="./Picture1.jpg" alt="Image 1" height="300px" width="320px" style="border: 4px solid grey;">
+            <p style="color:white;">AWS POWERED HEALTH HUB</p>
+        </a>
+          <br/><br/>
+</center>
+      </section>
+      <section>
+        <center>
+          <h3
+          class="impressive-heading"
+          style="
+            font-size: 2.5rem;
+            color: transparent;
+            background: linear-gradient(-45deg, pink, aqua, orange);
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: rotate 5s linear infinite,
+              colorChange 10s ease-in-out alternate infinite;
+              
+          "
+        >
+          <center>INTERNSHIP</center>
+        </h3><br/><br/>
+        <a class='image-item' href='/projects'>
+          <img src="./WhatsApp Image 2023-08-04 at 17.41.23.jpg" alt="Image 1" height="300px" width="280px" style="border: 4px solid grey;">
+          <p style="color:white;">CYBERSECURITY AICTE INTERNSHIP</p>
+      </a>
+        <br/>
+</center>
+    </section>
+ 
+    <center>
+ <section>
+  <h3
+  class="impressive-heading"
+  style="
+    font-size: 2.5rem;
+    color: transparent;
+    background: linear-gradient(-45deg, pink, aqua, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rotate 5s linear infinite,
+      colorChange 10s ease-in-out alternate infinite;
+      
+  "
+>
+  <center>Contact Me</center>
+</h3><br/>
+        <form
+        action="https://formsubmit.co/sathwikr73@gmail.com"
+        method="POST"
+      >
+        <label for="name"></label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+          required
+        /><br />
+
+        <label for="email"></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        /><br />
+
+        <label for="message"></label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Message"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit" style="color: black;font-size:17px;">SEND</button>
+      </form></section>
+    
+    </center>
+
+
+    
+    <footer style=" background-color: black;
+    padding: 20px;
+    
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: aqua;">
+      <br/>
+      <br/>
+      <div></div>
+      
+      <div class="social">
+        <a href="https://github.com/sathwik156876/"
+          ><i class="bi bi-github" height="25px" width="25px"></i
+        ></a>
+        <a href="https://www.instagram.com/its_sai_26/"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/sathwik-reddy-220745213/"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
+      &copy;  SATHWIK REDDY All rights reserved.
+      <br/>
+      <br/>
+    </footer>
+  
+  </body>
+  <!--style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+  </style>
+  <!-- <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+  </style> -->
+</html>
